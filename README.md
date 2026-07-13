@@ -25,13 +25,27 @@ documentos/
     matematicas/
       tema-1-sistemas-de-ecuaciones.pdf
       tema-2-funciones.pdf
-    ingles/
-      unidad-1-present-perfect.pdf
+    etica-legislacion/
+      unidad-1.pdf   (aún por subir)
+      unidad-2.pdf   (aún por subir)
+      ...            hasta unidad-6.pdf
+    aplicaciones-de-ofimatica/
+      unidad-1.pdf   (aún por subir)
+      unidad-2.pdf   (aún por subir)
+      ...            hasta unidad-6.pdf
   2do-bgu/
     ...
   3ro-bgu/
     ...
 ```
+
+Las carpetas `etica-legislacion/` y `aplicaciones-de-ofimatica/` ya
+están creadas (con un `.gitkeep` para que no se pierdan en Git) pero
+todavía no tienen PDF adentro, así que **no aparecerán en la página
+todavía** — el sitio solo lista una materia una vez que tiene al menos
+un documento real. Para que cada una muestre sus 6 unidades, sube los
+PDF con nombres `unidad-1.pdf`, `unidad-2.pdf`, ... `unidad-6.pdf`
+dentro de la carpeta correspondiente (ver sección 3).
 
 - Los tres grados (`1ro-bgu`, `2do-bgu`, `3ro-bgu`) ya existen — no los
   borres, aunque estén vacíos (por eso tienen un archivo `.gitkeep`).

@@ -22,9 +22,15 @@ const GRADOS = [
   { slug: '3ro-bgu', label: '3ro BGU' }
 ];
 
+const SMALL_WORDS = ['y', 'de', 'del', 'la', 'el', 'los', 'las', 'en', 'a'];
+
 function humanize(name) {
   const clean = name.replace(/\.pdf$/i, '').replace(/[-_]+/g, ' ').trim();
-  return clean.replace(/\b\w/g, c => c.toUpperCase());
+  const titled = clean.replace(/\b\w/g, c => c.toUpperCase());
+  return titled
+    .split(' ')
+    .map((word, i) => (i > 0 && SMALL_WORDS.includes(word.toLowerCase())) ? word.toLowerCase() : word)
+    .join(' ');
 }
 
 function getGitDate(absPath) {
