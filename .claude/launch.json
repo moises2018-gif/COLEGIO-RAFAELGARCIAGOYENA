@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "static-site",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": [
+        "-ExecutionPolicy", "Bypass",
+        "-File", "C:\\Users\\DAVID\\AppData\\Local\\Temp\\claude\\C--Users-DAVID-Desktop-Pagina-web-COLEGIO-RAFAELGARCIAGOYENA\\cd85e9e8-36a3-4512-9de9-3dd73379fe7d\\scratchpad\\serve.ps1"
+      ],
+      "port": 8890
+    }
+  ]
+}
