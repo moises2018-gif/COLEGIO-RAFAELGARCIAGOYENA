@@ -1,0 +1,22 @@
+{
+  "_generatedAt": "2026-07-13T00:00:00.000Z",
+  "1ro-bgu": {
+    "label": "1ro BGU",
+    "materias": {
+      "matematicas": {
+        "label": "Matematicas",
+        "posts": [
+          {
+            "name": "Tema 1",
+            "file": "tema-1.pdf",
+            "path": "documentos/1ro-bgu/matematicas/tema-1.pdf",
+            "size": 160882,
+            "date": "2026-07-13T00:00:00.000Z"
+          }
+        ]
+      }
+    }
+  },
+  "2do-bgu": { "label": "2do BGU", "materias": {} },
+  "3ro-bgu": { "label": "3ro BGU", "materias": {} }
+}

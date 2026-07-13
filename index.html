@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aula Virtual — U.E. Dr. Rafael García Goyena</title>
+<meta name="description" content="Aula virtual de documentos por materia — Unidad Educativa Dr. Rafael García Goyena">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="institution">
+    <span class="crest">🎓</span>
+    <div>
+      <p class="institution-kind">Institución Educativa Fiscal</p>
+      <h1>Unidad Educativa <em>"Dr. Rafael García Goyena"</em></h1>
+    </div>
+  </div>
+  <p class="tagline">Aula virtual de documentos</p>
+</header>
+
+<nav class="grado-tabs" id="gradoTabs" aria-label="Nivel de bachillerato">
+  <button class="grado-tab" data-grado="1ro-bgu">1ro BGU</button>
+  <button class="grado-tab" data-grado="2do-bgu">2do BGU</button>
+  <button class="grado-tab" data-grado="3ro-bgu">3ro BGU</button>
+</nav>
+
+<div class="app" id="app">
+
+  <aside class="materia-panel">
+    <div class="materia-panel-head">
+      <h2 id="gradoLabel">1ro BGU</h2>
+      <span class="materia-count" id="materiaCount">0 materias</span>
+    </div>
+    <nav class="materia-list" id="materiaList" aria-label="Materias"></nav>
+  </aside>
+
+  <main class="main">
+
+    <section class="empty-state" id="emptyState">
+      <div class="empty-card">
+        <span class="empty-mark">📚</span>
+        <h2>Selecciona una materia</h2>
+        <p>Cada materia es un foro de documentos. Elige una a la izquierda, o sube un PDF nuevo a GitHub dentro de <code>documentos/</code> para que aparezca aquí.</p>
+      </div>
+    </section>
+
+    <section class="no-materias hidden" id="noMaterias">
+      <div class="empty-card">
+        <span class="empty-mark">🗂️</span>
+        <h2>Este grado aún no tiene materias</h2>
+        <p>Para crear una materia nueva, sube al menos un archivo PDF a GitHub dentro de una carpeta nueva, por ejemplo:</p>
+        <code class="path-example" id="pathExample">documentos/1ro-bgu/matematicas/tema-1.pdf</code>
+        <p>En unos segundos, el sistema la detecta automáticamente y aparece en esta lista.</p>
+      </div>
+    </section>
+
+    <section class="forum-view hidden" id="forumView">
+      <header class="view-header">
+        <div>
+          <p class="crumb" id="crumb">Grado / Materia</p>
+          <h2 id="materiaTitle">—</h2>
+        </div>
+        <span class="post-count" id="forumPostCount">0 documentos</span>
+      </header>
+
+      <ul class="post-list" id="postList"></ul>
+    </section>
+
+  </main>
+</div>
+
+<footer class="foot">
+  <p>Los documentos se actualizan automáticamente al subirse a GitHub. Última actualización del listado: <span id="manifestUpdated">—</span></p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
